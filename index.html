@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Chronomètre</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+      .chronometre{
+        margin: auto ;
+        width: 300px;
+        text-align: center;
+        
+      }
+
+      .tim{
+        margin: auto;
+        width: 300px;
+        border: 1px solid rgba(0,0,0,0.5);
+        padding:5px 0;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: digital;
+        margin-bottom: 10px;
+
+
+      }
+     
+      button{
+        background: #3498db;
+        color: #fff;
+        width: 70px;
+        border-radius: 5px;
+        line-height: 1.5em;
+        border: none
+      }
+     
+
+        </style>
+</head>
+<body>
+<div class="chronometre">
+  <div class="tim">
+        <span><span class="number-hour">0</span> h</span> :
+        <span ><span class="number-min">0</span> min</span> :
+        <span ><span class="number-sec">0</span> s</span> :
+        <span ><span class="number-msec">0</span> ms</span>
+
+  </div>
+  <button id="start" onclick="start()">Start</button>
+  <button id="stop" onclick="stop()" >Stop</button>
+  <button id="reset" onclick="reset()" >Reset</button>
+</div>
+
+  
+</body>
+<script src="main.js"></script>
+</html>
